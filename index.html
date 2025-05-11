@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Postales Navideñas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: transparent; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎄 Crea tu postal navideña 🎁</h1>
+
+    <form id="postalForm">
+      <label for="nombre">Nombre del destinatario:</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Ej. Goku" />
+
+      <label for="mensaje">Mensaje navideño:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+      <button type="submit" id="btnGenerar">🎬 Generar postal</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
